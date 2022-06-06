@@ -1,0 +1,170 @@
+.morning>.appClima {
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.night>.appClima {
+  color: #989898;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.morning>.appClima>.country {
+  font-size: 2em;
+}
+
+.morning>.appClima>.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 150px;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.morning>.appClima>.weather>.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.morning>.appClima>.weather>.button>button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #f4f4f4;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.morning>.appClima>.description {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.morning>.appClima>.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.morning>.appClima>.bubble>span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 12px 2px #ffffff55;
+  border-radius: 100%;
+  width: 95px;
+  height: 95px;
+}
+
+.morning>.appClima>.bubble>span>i {
+  font-size: 1.5em;
+}
+
+.night>.appClima>.country {
+  font-size: 2em;
+}
+
+.night>.appClima>.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 150px;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.night>.appClima>.weather>.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.night>.appClima>.weather>.button>button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #989898;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.night>.appClima>.description {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.night>.appClima>.bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.night>.appClima>.bubble>span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 12px 2px #ffffff55;
+  border-radius: 100%;
+  width: 95px;
+  height: 95px;
+}
+
+.night>.appClima>.bubble>span>i {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .morning>.appClima>.bubble {
+    gap: 30px;
+  }
+
+  .morning>.appClima>.bubble>span {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  .night>.appClima>.bubble {
+    gap: 30px;
+  }
+
+  .night>.appClima>.bubble>span {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+  }
+
+}
