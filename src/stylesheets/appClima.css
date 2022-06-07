@@ -30,6 +30,13 @@
   font-weight: bold;
 }
 
+.morning>.appClima>.weather>.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 110px;
+}
+
 .morning>.appClima>.weather>.button {
   display: flex;
   flex-direction: column;
@@ -93,6 +100,13 @@
   height: 150px;
   font-size: 3em;
   font-weight: bold;
+}
+
+.night>.appClima>.weather>.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 110px;
 }
 
 .night>.appClima>.weather>.button {
