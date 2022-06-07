@@ -62,7 +62,7 @@ const AppClima = () => {
 
       <div className='bubble'>
 
-        <span><i className="bi bi-wind"></i>{weather?.wind.speed} m/s</span>
+        <span><i className="bi bi-wind"></i>{(((weather?.wind.speed) * 1 / 1000) * 3600 / 1).toFixed(0)} km/h</span>
         <span><i className="bi bi-cloud"></i>{weather?.clouds.all}%</span>
         <span><i className="bi bi-droplet-half"></i>{weather?.main.humidity}%</span>
 
