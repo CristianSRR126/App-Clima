@@ -1,40 +1,10 @@
 import React from 'react'
 import '../stylesheets/appClima.css'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { useState } from 'react'
 
-const AppClima = () => {
+const AppClima = ({ weather }) => {
 
-  const [location, setLocation] = useState()
-  const [weather, setWeather] = useState()
   const [degress, setDegress] = useState(true)
-
-  useEffect(() => {
-
-    const succes = position => {
-      const lat = position.coords.latitude
-      const lon = position.coords.longitude
-      setLocation({ lat, lon })
-    }
-
-    navigator.geolocation.getCurrentPosition(succes)
-
-  }, [])
-
-  useEffect(() => {
-
-    if (location !== undefined) {
-
-      const key = '8433db8fe7bf43e929874f28bf3e0e4d'
-      const api = `https://api.openweathermap.org/data/2.5/weather?lat=${location.lat}&lon=${location.lon}&appid=${key}`
-
-      axios.get(api)
-        .then(res => setWeather(res.data))
-        .catch(err => console.log(err))
-
-    }
-
-  }, [location])
 
   const toggleToF = () => setDegress(false)
   const toggleToC = () => setDegress(true)
